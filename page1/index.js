@@ -19,7 +19,7 @@ function topFunction() {
 }
 
 
-
+// next Prev
 let currentSection = 0;
 let sections = document.querySelectorAll(".section");
 let sectionButtons = document.querySelectorAll(".nav > li");
