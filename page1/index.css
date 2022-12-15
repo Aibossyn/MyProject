@@ -1,0 +1,22 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    max-width: 100%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-image: url(/static/media/world-cup-flag-bar-desktop.ce3ca4a7.png);
+}
+
+.basy{
+    background-color: #550065;
+    background-image: url(image.png);
+    color: #fff;
+   font-size: 35px;
+    position: absolute;
+    z-index: 11;
+    top: 5px;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    
+}
