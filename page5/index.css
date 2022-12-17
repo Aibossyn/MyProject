@@ -1,3 +1,18 @@
-h1{
-    font-style:initial;
+*{
+ background-color: rgb(240, 238, 238);
+ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+margin: 10;
+padding: 0;
+margin-left: 1%;
+}
+.mk{
+gap: 5%;
+display: flex;
+flex-wrap: wrap;
+margin: 20px;
+
+}
+.mk img{
+    margin: 25px;
+    position: relative;
 }
