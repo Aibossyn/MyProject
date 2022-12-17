@@ -134,5 +134,9 @@
     padding-top: 3rem!important;
     padding-bottom: 1rem!important;
     margin: 0;
-    
+}
+.foto a{
+    width: 50%;
+    max-width: 90%;
+    margin: 0;
 }
