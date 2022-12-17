@@ -1,0 +1,138 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: serif;
+}
+.body{
+    padding: 0;
+    margin: 0;
+    font-family: serif;
+}
+
+.basy{
+    background-color: #fff;
+    position:absolute;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    height: 100px;
+    width: 100%;
+    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 20%);
+    transition: all .4s linear;
+}
+
+.basy h1{
+    font-size: 50px;
+    text-shadow: 1px 1px 0.2px #000000;
+    position: relative;
+    margin-left: 5%;
+    color:#510061;
+}
+.menu{
+    position:absolute;
+    font-size: inherit;
+    font-weight: normal; 
+    display: block;
+    flex-basis: auto;
+    flex-grow: 1;
+    flex-wrap: nowrap;
+    left: 400px;
+    top: 5px;
+}
+.menu ul{
+    padding-left: 0;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0;
+    margin-bottom: 0;
+    color:#510061;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    font-size: inherit;
+    font-weight: normal;
+}
+.menu li{
+    font-size: 1.125rem;
+    margin-right: 40px;
+    touch-action: manipulation;
+    position: relative;
+    font-weight: 500;
+    white-space: nowrap;
+    display: flex;
+    
+}
+.menu a{
+    color: inherit;
+    text-decoration: none;
+    transition: color .1s linear;
+    display: block;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 1.8rem;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.content{
+    width: 100%;
+    height:auto;
+    background-color: #020f2a;
+    margin-right: -0.75rem;
+    margin-left: -0.75rem;
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: initial;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    text-size-adjust: none;
+    margin-top: calc(var(--bs-gutter-y)*-1);
+}
+.content h1{
+    position:absolute;
+    left: 50px;
+    top: 150px;
+    color: #fff;
+}
+
+.foto{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 70%;
+    font:normal;
+    vertical-align: initial;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    text-size-adjust: none;
+    box-sizing: border-box;
+    margin-left: 70px;
+    margin-top: 10%;
+}
+.foto img{
+    height:310px;
+    padding-right: 0.8rem;
+    padding-left:1rem;
+    flex: 0 0 auto;
+    width: 60%;
+    box-sizing:border-box;
+    max-width: 110%;
+    margin-bottom: 1rem!important;
+    padding-top: 3rem!important;
+    padding-bottom: 1rem!important;
+    margin: 0;
+    
+}
