@@ -14,6 +14,9 @@
   </style>
 </head>
 <body>  
+
+
+
   <h1>Login</h1>
   <form onsubmit="onSubmit(event)" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
       <input id="login" type="text" placeholder="login" name="login" required><br>
