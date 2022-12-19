@@ -1,22 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>  
+<html>
 <head>
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <title>Page 1</title>
     <link rel="stylesheet" href="index.js">
 </head>
+<body style="background-color: #550065">  
 
-<body>
-    <div class="container">
-        <div class="basy"><h2> <a href="http://localhost/">Qatar 2022 World CUP</a></h2>
-            <img src="C:\Users\Legion\Desktop\MyProject\MyProject\page1\7.png" alt="">
+<div class="container" >
+        <div class="basy"><h2>Qatar 2022 World CUP</h2>
+            <img src="7.png" alt="">
         </div>
     <div class="orta">
         <div class="foto">
-               <img src="C:\Users\Legion\Desktop\MyProject\MyProject\page1\4.png" alt="">       
+               <img src="4.png" alt="">       
             <div class="soz">
                 <div class="soz1">
                     <h2>Mbappe gol salatn sen gana</h2>
@@ -24,6 +24,16 @@
                 </div>
             </div>
         </div>
+        
+
+        
+        <h1 style="color:white; margin-left:10%">Registor</h1>
+          <form style="margin-left:10%;" onsubmit="onSubmit(event)" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
+          <input style="margin-top:2%; padding:0.5%; border-radius:20px" id="login" type="text" placeholder="login" name="login" required><br>
+          <input style="margin-top:2%; padding:0.5%;border-radius:20px" id="password" type="password" placeholder="Password" name="password" required><br>
+          <input style="margin-top:2%; padding:0.5%;border-radius:20px" type="submit" name="submit" value="Submit">  
+         </form>
+            <a style="margin-left:10%; color:white; font-size:large; margin-top:2%; padding:0.5%;border-radius:20px" href="login.php">Login</a>      
     </div>
 
         <div class="asty">
@@ -70,6 +80,65 @@
 </div>
 
 <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+
+  
+  
+  
+  
+  
+
+  <?php
+  $Pass =$login= "";
+  $is = true;
+  if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    if (empty($_POST["password"])) {
+      $is = false;
+    } else {
+      $Pass = test_input($_POST["password"]);
+    }
+    if (empty($_POST["login"])) {
+      $is = false;
+    } else {
+      $login = test_input($_POST["login"]);
+    }
+    
+    
+    if($is){
+      include 'Conn.php';
+      try {
+        
+        $sql = "INSERT INTO profile 
+      VALUES ('$login','$Pass')";
+      $pdo->exec($sql);
+      session_start();
+      $_SESSION['ID'] = $login;
+      
+      echo "New record created successfully";
+      ?>
+        <script>
+          window.open('DB.php',"_self");
+          </script>
+      
+      <?php
+      
+      } catch(PDOException $e) {
+        echo'Try again with another login';
+        
+      }
+      
+      $pdo = null;
+    }
+    
+  }
+  
+  function test_input($data) {
+    $data = trim($data);
+    $data = stripslashes($data);
+    $data = htmlspecialchars($data);
+    return $data;
+  }
+  ?>
 <script src="index.js"></script>
 </body>
 </html>
