@@ -1,0 +1,141 @@
+*{
+margin: 0;
+padding: 0;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.mk2{
+    color: white;
+    background-color: #0067b8;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+#a2{
+    width: 100%;
+    height: 700px;
+}
+.mk4{
+    position: absolute;
+    width: 50%;
+    max-height: 100%;
+    padding-top: 300px;
+    padding-left: 10%;
+}
+#a3{
+    font-size: xxx-large;
+    color: black;
+    font-size: 2.2rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.mk5{
+    display: flex;
+    gap: 15%;
+
+}
+button.new{
+   border-color: white;
+   background-color: #0067b8;
+   border-radius: 20px;
+   width: 150%;
+   height: 40px;
+  color:white;
+  font-size: large;
+  margin-top: 10px;
+}
+.mk4 p:hover{
+transform: scale(1.1);
+}
+.mk7{
+    text-align: center;
+}
+.mk7 a {
+    width: 100%;
+    color: #0067b8;
+    font-size: large;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    }
+    .mk7 h1{
+        font-family:sans-serif;
+        width: 80%;
+        padding-left: 10%;
+        padding-top: 7%;
+    }
+    .mk8{
+        width: 80%;
+        display:flex;
+        gap: 5%;
+        padding-left: 10%;
+        padding-top: 50px;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+    #a18{
+        display:grid;
+    }
+#a7{
+    color: #0067b8;
+}
+    .mk9{
+
+        display:flex;
+        margin-left: 5%;
+        gap: 4%;
+        padding-top: 5%;
+        font-size: large;
+    }
+    .mk9 p {
+        width: 80%;
+    }
+#a6{
+    padding-top: 4%;
+}
+#a9{
+    font-size: 100%;
+    text-decoration: none;
+}
+#a10{
+    color:#0067b8;
+}
+#a15{
+    width: 100%;
+    height: 300px;
+}
+.mk13{
+display:grid;
+}
+.mk13 button{
+    display: inline-block;
+    font-weight: 600;
+    border:solid ;
+    position: relative;
+    border-radius: 0.125rem;
+    border-color: white;
+    background-color: white;
+    text-align: left;
+    font-size: larger;
+    border-radius: 5px;
+    height: 85px;
+}
+.mk13 button:hover{
+    background-color:whitesmoke;
+    border-color:rgb(228, 225, 225);
+    
+}
+.mk15{
+    width: 50%;
+    display: flex;
+    gap:1%;
+    padding-left: 10%;
+}
+.mk14{
+    text-align: center;
+    padding-top:2%;
+    font-size: xx-large;
+}
+.mk15 img {
+    width: 10%;
+    margin-top: 5%;
+    min-width: 20%;
+}
