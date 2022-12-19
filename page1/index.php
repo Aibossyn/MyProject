@@ -10,6 +10,33 @@
 </head>
 <body style="background-color: #550065">  
 
+
+<div class="basy">
+        <h1>Qatar 2022</h1>
+        <div class="menu">
+            <ul>
+                <li>
+                    <a href="C:\Users\Legion\Desktop\MyProject\MyProject\page1\index.html">Rega</a>
+                </li>
+                <li>
+                    <a href="C:\Users\Legion\Desktop\MyProject\MyProject\page2\index.html">News</a>
+                </li>
+                <li>
+                    <a href="">About</a>
+                </li>
+                <li>
+                    <a href="">About</a>
+                </li>
+                <li>
+                    <a href="">About</a>
+                </li>
+                <li>
+                    <a href="">About</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
 <div class="container" >
         <div class="basy"><h2>Qatar 2022 World CUP</h2>
             <img src="7.png" alt="">
