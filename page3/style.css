@@ -173,5 +173,38 @@ body{
 .mk7{
     height: 100px;
 }
+h2{
+    animation: bounce .5s alternate infinite ease-in;
+}
 
-
+@media screen and (min-width:1601px) {
+    @keyframes bounce {
+      0% {
+        transform: translateX(50%);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+    
+    h2 {
+      color: red;
+      display: inline-block; 
+    }
+  }
+  
+  @media screen and (max-width:1600px) {
+    @keyframes bounce {
+      0% {
+        transform: translateY(-200%);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+    
+    h2 {
+      color: green;
+      display: block; 
+    }
+  }
