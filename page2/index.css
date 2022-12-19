@@ -15,7 +15,6 @@
     position:absolute;
     position: sticky;
     top: 0;
-    z-index: 10;
     height: 100px;
     width: 100%;
     box-shadow: 0 2px 2px 0 rgb(0 0 0 / 20%);
@@ -84,8 +83,6 @@
     background-color: #020f2a;
     margin-right: -0.75rem;
     margin-left: -0.75rem;
-    --bs-gutter-x: 1.5rem;
-    --bs-gutter-y: 0;
     display: flex;
     flex-wrap: wrap;
     margin: 0;
@@ -123,7 +120,7 @@
     margin-top: 10%;
 }
 .foto img{
-    height:310px;
+    height:100%;
     padding-right: 0.8rem;
     padding-left:1rem;
     flex: 0 0 auto;
@@ -137,8 +134,11 @@
 }
 .foto a{
     width: 50%;
-    max-width: 90%;
-    margin: 0;
+    max-width: 100%;
+    margin-left: 1%;
     text-decoration: none;
     color: #fff;
+}
+.foto h2{
+    font-size: 20px;
 }
