@@ -83,8 +83,9 @@ body{
     display: flex;
     gap: 4%;
 }
-#a6 img {
-   width: 100%;
+#a6 iframe {
+   width: 150%;
+   height: 100%;
    border-radius:10px;
    margin-left: 5%;
 }
@@ -99,20 +100,25 @@ body{
     width: auto;
     background-color: white;
     box-shadow: 0 0 10px;
+    margin-left: 12%;
+    
 }
 #a8{
     width: auto;
     background-color: white;
     box-shadow: 0 0 10px;
+    margin-right:1%;
 }
 .mk5{
     display: flex;
     gap: 2%;
     margin-top: 2%;
 }
-#a11 img {
-   width: 100%;
+#a11 iframe {
+   width: 170%;
    border-radius:10px;
+   height: 100%;
+
 }
 #a9 img{
     width: 100%;
@@ -125,6 +131,7 @@ body{
     width: auto;
     background-color: white;
     box-shadow: 0 0 10px;
+    margin-left:2%;
 }
 #a10{
     width: auto;
@@ -137,8 +144,9 @@ body{
     margin-top: 2%;
 }
 #a12 img {
-   width: 100%;
+   width: 90%;
    border-radius:10px;
+   margin-left:3%;
 }
 #a13 img{
     width: 100%;
@@ -156,6 +164,7 @@ body{
     width: auto;
     background-color: white;
     box-shadow: 0 0 10px;
+    margin-right: 2%;
 }
 .mk7{
     height: 100px;
