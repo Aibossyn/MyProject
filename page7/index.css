@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+
+body {
+  background-color: #1a1a2e;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+body {
+  background-color: #1a1a2e;
+  font-family: "Muli", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+
+
+.container {
+  display: flex;
+  width: 90vw;
+}
+.panel {
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  border-radius: 50px;
+  color: white;
+  cursor: pointer;
+  flex: 0.5;
+  margin: 10px;
+  position: relative;
+  transition: flex 0.7s ease-in;
+}
+.panel h3 {
+  font-size: 24px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  opacity: 0;
+}
+.panel.active {
+  flex: 5;
+}
+.panel.active h3 {
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
+}
+#abilities {
+  background-position: right;
+}
+@media (max-width: 800px) {
+  .container {
+    flex-direction: column;
+    height: 100vh;
+  }
+  #abilities {
+    background-position: center;
+  }
+  .panel {
+    background-size: 100%;
+  }
+  .panel h3 {
+    bottom: 50px;
+    font-size: 15px;
+  }
+  .panel.active {
+    flex-grow: 1.5;
+  }
+}
+
+
+.basy{
+  background-color: #fff;
+  position:absolute;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  height: 100px;
+  width: 100%;
+  box-shadow: 0 2px 2px 0 rgb(0 0 0 / 20%);
+  transition: all .4s linear;
+}
+
+.basy h1{
+  font-size: 50px;
+  text-shadow: 1px 1px 0.2px #000000;
+  position: relative;
+  margin-left: 5%;
+  color:#510061;
+}
+.menu{
+  position:absolute;
+  font-size: inherit;
+  font-weight: normal; 
+  display: block;
+  flex-basis: auto;
+  flex-grow: 1;
+  flex-wrap: nowrap;
+  left: 400px;
+  top: 5px;
+}
+.menu ul{
+  padding-left: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0;
+  margin-bottom: 0;
+  color:#510061;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+  font-size: inherit;
+  font-weight: normal;
+}
+.menu li{
+  font-size: 1.125rem;
+  margin-right: 40px;
+  touch-action: manipulation;
+  position: relative;
+  font-weight: 500;
+  white-space: nowrap;
+  display: flex;
+  
+}
+.menu a{
+  color: inherit;
+  text-decoration: none;
+  transition: color .1s linear;
+  display: block;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 1.8rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
