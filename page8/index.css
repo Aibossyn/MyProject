@@ -9,7 +9,6 @@
 }
 
 
-
 body {
   background-color: #1a1a2e;
   font-family: "Muli", sans-serif;
@@ -63,7 +62,7 @@ body {
   .panel h3 {
     bottom: 50px;
     font-size: 15px;
-  }
+  } 
   .panel.active {
     flex-grow: 1.5;
   }
